@@ -22,10 +22,11 @@
     const TabMenu = () => {
 
     const useState = React.useState;
-    const[active, setActive] = useState(1);
-    const activate = (id=>{
-      setActive(active => active = id
-    )})
+    const [active, setActive] = useState(1);
+    const activate = ((id)=>{
+      console.log(id);
+      return setActive( active => active = id);
+    })
 
       const items = [
         {
@@ -41,7 +42,7 @@
           title: "お問合せ",
         },
       ]
-
+//idがいっしょならactive
       return (
         <>
           <section className="tab">
@@ -49,9 +50,9 @@
               {items.map((item) => (
                 <li key={item.id}>
                   <a
-                    className = { item.id === active && 'active'}
+                    className = { item.id === active && 'active' }
                     href="#"
-                    onClick={()=> activate(item.id)}>{item.title}
+                    onClick = {()=> activate(item.id)}>{item.title}
                   </a>
                 </li>
               ))}
@@ -70,7 +71,7 @@
       )
     }
     root.render(<>
-      <TabMenu />
+    < TabMenu />
     </>
     )
   </script>
