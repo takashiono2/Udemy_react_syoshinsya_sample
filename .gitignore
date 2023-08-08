@@ -3,5 +3,6 @@
 /src/images
 /Udemy_react_syoshinsya_sample.code-workspace
 .gitigonre
+section3/modal/template.html
 section3/modal/image001.jpg
-seciton3/modal/template.html
+section3/carousel/images/*.jpg

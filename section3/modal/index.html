@@ -21,12 +21,14 @@
     const ModalWindow = () => {
       const useState = React.useState;
       const [ modalStatus, setModalStatus] = useState(false);
-
-      const toggleModal = () => setModalStatus(!modalStatus);
-
+//ON OFFを設定。
+      const toggleModal = () => {
+        return setModalStatus(!modalStatus);
+      }
+//modalStatusがyesならdisplay : 初期値、Noなら　display : 非表示
       return (<>
       <button onClick={toggleModal}>画像を表示</button>
-        <div style={{ display : modalStatus ? 'initial' : 'none'}}>
+        <div style={{ display: modalStatus ? 'initial' : 'none'}}>
           <div>
             <div className="modal__inner">
               <div className="modal__close" onClick={toggleModal}>
