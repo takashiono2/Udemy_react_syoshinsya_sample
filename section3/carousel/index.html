@@ -34,25 +34,22 @@
       const useState = React.useState
       const [active, setActive] = useState(0);
       const currentImage = (id) => {
-        return (setActive(active => active = id))
+        return setActive(active => active = id);
       }
-
       const prevImage = () => {
-        if (active <= 0) {
-          setActive(active => active = images.length - 1)
-        } else {
-          setActive(active - 1)
+        if(active <= 0){
+          setActive(active => active = image.length -1);
+        }else{
+          setActive(active - 1);
         }
       }
-
       const nextImage = () => {
-        if (active >= images.length - 1) {
-          setActive(active => active = 0)
-        } else {
-          setActive(active + 1)
+        if(active >= images.length-1){
+          setActive(active => active = 0);
+        }else{
+          setActive(active + 1);
         }
       }
-
 
       return (
         <>
@@ -67,7 +64,7 @@
                 <li
                   key={image.id}
                   className={active === image.id && 'current'}
-                  onClick={() => currentImage(image.id)}
+                  onClick={()=>currentImage(image.id)}
                 >
                   <img src={image.img} />
                 </li>
@@ -77,6 +74,7 @@
         </>
       )
     }
+
     root.render(
       <>
         <Carousel />

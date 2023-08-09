@@ -16,13 +16,14 @@
 | 40. | セクション3のまとめ |
 </details>
 
-<!-- <details> -->
-<!-- <summary>セクション4:フォーム</summary> -->
-<!-- | NO | 内容 |
+<details>
+<summary>セクション4:フォーム</summary>
+
+| NO | 内容 |
 | ---- | ---- |
 | 41. | Reactのフォームの概要 |
 | 42. | useState(制御コンポーネント)で簡単なフォームをつくる |
-| 43. | useStateでオブジェクトを使う方法 |
+<!-- | 43. | useStateでオブジェクトを使う方法 |
 | 44. | フォーム: textarea, radioボタン |
 | 45. | フォーム: selectボックス |
 | 46. | フォーム: checkボックス(boolean) |
@@ -30,5 +31,5 @@
 | 48. | useRef のパターン (Uncontrolled Component) |
 | 49. | フォーム: ファイルアップロード (非制御) |
 | 49. | サンプル4: ToDoリストその1 追加機能 | -->
-<!-- </details> -->
+</details>
 
