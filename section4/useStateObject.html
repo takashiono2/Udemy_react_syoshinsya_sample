@@ -20,29 +20,28 @@
 
     const ControlledForm = () => {
       const useState = React.useState
-      const [name, setName] = useState('')
-//handleChange関数が、入力文字が検証で出力されること
-    const handleChange = (e) =>{
-      return setName(e.target.value);
-    }
+      const [ form, setForm ] = useState({
+        name: '',
+        email: '',
+      })
 
-      const handleSubmit = (e) => {
-        e.preventDefault()
-        console.log(e)
+      const handleChange =(e) => {
+        const {name,value} = e.target
+        return setForm({
+          ...form,
+          [name]: value
+        })
       }
 
-      //送信ボタンを押したら送信させる
+      const handleSubmit = (e) =>{
+        e.preventDefault();
+        console.log(e);
+      }
       return (
         <>
           <form onSubmit={handleSubmit}>
-            <label htmlFor="name">名前</label>
-            <input
-              id="name"
-              type="text"
-              name="name"
-              value={name}
-              onChange={handleChange}
-            />
+            <input type="text" name="name" value={form.name} onChange={handleChange} />
+            <input type="email" name="email" value={form.email} onChange={handleChange}/>
             <button>送信</button>
           </form>
         </>
