@@ -29,7 +29,7 @@
         const {name,value} = e.target
         return setForm({
           ...form,
-          [name]: value
+          [name]: name,
         })
       }
 
@@ -41,7 +41,7 @@
         <>
           <form onSubmit={handleSubmit}>
             <input type="text" name="name" value={form.name} onChange={handleChange} />
-            <input type="email" name="email" value={form.email} onChange={handleChange}/>
+            <input type="email" name="email" value={form.email} onChange={handleChange} />
             <button>送信</button>
           </form>
         </>

@@ -24,8 +24,8 @@
 | 41. | Reactのフォームの概要 |
 | 42. | useState(制御コンポーネント)で簡単なフォームをつくる |
 | 43. | useStateでオブジェクトを使う方法 |
-<!-- | 44. | フォーム: textarea, radioボタン |
-| 45. | フォーム: selectボックス |
+| 44. | フォーム: textarea, radioボタン |
+<!-- | 45. | フォーム: selectボックス |
 | 46. | フォーム: checkボックス(boolean) |
 | 47. | checkボックス(複数・useStateで配列を扱う) |
 | 48. | useRef のパターン (Uncontrolled Component) |
