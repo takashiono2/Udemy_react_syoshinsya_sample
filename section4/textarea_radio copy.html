@@ -39,13 +39,13 @@
         e.preventDefault();
         console.log(e);
       }
-
+//ラベルをそれぞれ名前(name)、メールアドレス(email)、男性（gender_male）、女性(gender_female)、その他（gender_other）
       return (
         <>
           <form onSubmit={handleSubmit}>
-            <label htmlForm="name">名前</label>
+            <label htmlFor="name">名前</label>
               <input id="name" type="text" name="name" value={form.name} onChange={handleChange} /><br />
-            <label htmlForm="email">メールアドレス</label>
+            <label htmlFor="email">メールアドレス</label>
               <input id="email" type="email" name="email" value={form.email} onChange={handleChange} /><br />
 
             <legend>性別</legend>
@@ -54,9 +54,10 @@
             <label htmlFor="gender_female">女性</label>
               <input id="gender_female" type="radio" name="gender" value="female" onChange={handleChange} /><br />
             <label htmlFor="gender_other">その他</label>
+            <label htmlFor="gender_other">その他</label>
               <input id="gender_other" type="radio" name="gender" value="other" onChange={handleChange} /><br />
-            <label htmlForm="contact">お問い合わせ内容</label><br />
-              <textarea id="contact" name="contact" value={form.contact} onChange={handleChange}></textarea>
+            <label>お問い合わせ内容</label><br />
+              <textarea name="contact" value={form.contact} onChange={handleChange}></textarea>
             <button>送信</button>
           </form>
         </>
