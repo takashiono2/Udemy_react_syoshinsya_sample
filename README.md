@@ -28,8 +28,8 @@
 | 45. | フォーム: selectボックス |
 | 46. | フォーム: checkボックス(boolean) |
 | 47. | checkボックス(複数・useStateで配列を扱う) |
-<!-- | 48. | useRef のパターン (Uncontrolled Component) |
-| 49. | フォーム: ファイルアップロード (非制御) |
+| 48. | useRef のパターン (Uncontrolled Component) |
+<!-- | 49. | フォーム: ファイルアップロード (非制御) |
 | 49. | サンプル4: ToDoリストその1 追加機能 | -->
 </details>
 
