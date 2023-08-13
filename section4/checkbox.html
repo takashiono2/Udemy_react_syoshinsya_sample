@@ -26,9 +26,9 @@
 
       const handleChange =(e) => {
         console.log(e);
-        // const {name,value} = e.target
-        const name = e.target.name
-        const value = name === 'caution' ? e.target.checked : e.target.value
+        // nameがvaleで'caution'ならe.target.checkedに、違うならe.target.valueにする。
+        const name = e.target.name;
+        const value = e.target.name === 'caution' ? e.target.checked : e.target.value
         return setForm({
           ...form,
           [name]: value,
@@ -42,7 +42,7 @@
       return (
         <>
           <form onSubmit={handleSubmit}>
-            <input type="checkbox" name="caution" onChange={handleChange} />
+            <input type="checkbox" name="caution" checked={form.caution} onChange={handleChange} />
             注意事項に同意する
             <button>送信</button>
           </form>
