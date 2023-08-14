@@ -17,24 +17,26 @@
   <script type="text/babel">
     const container = document.getElementById('app')
     const root = ReactDOM.createRoot(container)
-
+//quriousを配列で定義
     const ControlledForm = () => {
       const useState = React.useState
       const [ form, setForm ] = useState({
-        qurious: []
+        qurious: [],
       })
 
       const handleChange =(e) => {
         const {name,value} = e.target
-
+// 配列に含んでいたら、判別して追加
         if(form.qurious.includes(value)){
-          const list = form.qurious.filter(q=> q !== value)
+          const list = form.qurious.filter((q)=>{
+              return q => q !== value
+            })
 
           return setForm({
             ...form,
             [name]: list,
           })
-
+//含んでなかったらそのまま追加
         }else{
           const list = [
             ...form.qurious,
@@ -51,7 +53,6 @@
         e.preventDefault();
         console.log(form);
       }
-
 
       return (
         <>
