@@ -36,10 +36,18 @@
 | 53. | セクション4のまとめ |
 </details>
 
-<!-- <details>
+<details>
 <summary>セクション5: Ajax + useEffect() 副作用関数</summary>
 | NO | 内容 |
 | 54. | web通信のおさらい (Vue.js講座と同じ) |
-</details> -->
+| 55. | 簡易サーバーとNetwork (Vue.js講座と同じ) |
+| 56. | Promise/async/await/fetch (Vue.js講座と同じ) |
+| 57. | ライフサイクル |
+| 58. | useEffect()|
+<!-- | 59. | サンプル5: API情報取得 |
+| 60. | ToDoリストに検索機能を追加する |
+| 61. | カルーセルに自動画像切り替え機能を追加する |
+| 62. | セクション5のまとめ | -->
+</details>
 
 

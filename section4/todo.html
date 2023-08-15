@@ -28,31 +28,30 @@
       const [ todos, setTodo ] = useState([
         {item: 'あああ',isDone: false}
       ])
-
+//setTodoとsetItemを
       const addItem=()=>{
         if(!item) return;
         const newTodo={
           item: item,
           isDone: false
         }
-
         setTodo([
           ...todos,
           newTodo
         ])
-
-        setItem('')
+      setItem('')
       }
 
+//新しい配列をnewListとする
       const deleteItem = (id) => {
-        const newList = todos.filter((todo, index) => {
-          return id !== index ? todo : null
-        })
-        setTodo(newList);
+        const newList = todos.filter((todo,index)=>
+            id !== index ? todo : null
+        )
+        setTodo(newList)
       }
-
-      const handleChange =(id,e)=>{
-        const newList = todos.filter((todo,index) => {
+//新しい配列をnewListとする
+      const handleChange =(id, e)=>{
+        const newList = todos.filter((todo, index)=>{
           if(id === index){
             todo.isDone = e.target.checked
             return todo
@@ -60,7 +59,7 @@
             return todo
           }
         })
-        setTodo(newList);
+        setTodo(newList)
       }
 
       return (
@@ -68,18 +67,19 @@
           <input
             type="text"
             value={item}
-            onChange={(e)=>setItem((item)=> item = e.target.value )
-          }>
-          </input>
+            onChange={(e)=> setItem(item => item = e.target.value)}
+          />
           <button onClick={addItem}>追加</button>
           <ul>
             { todos.map((todo, index)=>{
               return(
-                <li>
-                  <input type="checkbox" checked={ todo.isDone } onChange={(e)=>handleChange(index,e)}/>
-                  <span className={ todo.isDone && 'done'}>{ todo.item }</span>
-                  <button onClick={()=>{deleteItem(index)}}>削除</button>
-                </li>
+                <>
+                  <li>
+                    <input type="checkbox" checked={todo.isDone} onChange={(e)=>handleChange(index,e)}/>
+                    <span className={ todo.isDone && 'done'}>{ todo.item }</span>
+                    <button onClick={()=>deleteItem(index)}>削除</button>
+                  </li>
+                </>
               )
             })}
           </ul>
@@ -94,3 +94,4 @@
 </body>
 
 </html>
+
