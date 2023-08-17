@@ -26,15 +26,18 @@
 
       const url = 'https://dog.ceo/api/breeds/image/random';
       const options = { method: 'get' }
-      const getDogImage = async () => {
+      //fetchで取得
+      const getDogImage = async() => {
         const response = await fetch(url, options).then(res => res.json())
         setImage(response.message);
       }
 
-      useEffect(()=>{
-        getDogImage(),[]}
-      )
+      useEffect(() => {
+        getDogImage();
+      },[]);
 
+      //useEffectを使う
+      //imgタグを使う
       return (
         <>
           <button onClick={getDogImage}>画像を取得</button>
