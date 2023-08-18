@@ -31,7 +31,6 @@
         {item: 'あああ',isDone: false}
       ])
 
-
       const [ searchValue, setSearchValue ] = useState('');
       const [ filteredList, setFilteredList] = useState([]);
 
@@ -75,12 +74,13 @@
         setTodo(newList);
       }
 
-      useEffect(() => {
-        const newList = todos.filter(todo => {
-          return todo.item.indexOf(searchValue) !== -1
-        })
-        setFilteredList(newList)
-      }, [searchValue]);
+      useEffect(()=>{
+        const newList = todos.filter((todo)=>(
+          todo.item.indexOf(searchValue) !== -1
+        ))
+        setFilteredList(newList);
+      },[searchValue])
+      //useEffectを使う。一致しなかったら、newListとする。searchValueで監視
 
       return (
         <>
