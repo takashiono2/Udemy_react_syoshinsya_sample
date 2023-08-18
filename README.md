@@ -39,6 +39,7 @@
 <details>
 <summary>セクション5: Ajax + useEffect() 副作用関数</summary>
 | NO | 内容 |
+| ---- | ---- |
 | 54. | web通信のおさらい (Vue.js講座と同じ) |
 | 55. | 簡易サーバーとNetwork (Vue.js講座と同じ) |
 | 56. | Promise/async/await/fetch (Vue.js講座と同じ) |
@@ -53,6 +54,7 @@
 <details>
 <summary>セクション6: create-react-app, css</summary>
 | NO | 内容 |
+| ---- | ---- |
 | 63. | create-react-app の前に |
 | 64. | create-react-appのインストール |
 | 65. | ファイル・フォルダ構成 |
