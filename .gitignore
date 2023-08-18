@@ -7,3 +7,25 @@ section3/modal/template.html
 section3/modal/image001.jpg
 section3/carousel/images/*.jpg
 section5/carousel/images/*.jpg
+
+section6/my-app/node_modules
+section6/my-app/public
+section6/my-app/*.pnp
+section6/my-app/*.pnp.js
+
+# testing
+section6/my-app/coverage
+
+# production
+section6/my-app/build
+
+# misc
+section6/my-app/.DS_Store
+section6/my-app/.env.local
+.section6/my-app/env.development.local
+section6/my-app/.env.test.local
+section6/my-app/.env.production.local
+
+section6/my-app/npm-debug.log*
+section6/my-app/yarn-debug.log*
+section6/my-app/yarn-error.log*
