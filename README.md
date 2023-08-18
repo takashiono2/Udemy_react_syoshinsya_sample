@@ -51,7 +51,7 @@
 </details>
 
 <details>
-<summary>セクション6: Ajax + useEffect() 副作用関数</summary>
+<summary>セクション6: create-react-app, css</summary>
 | NO | 内容 |
 | 63. | create-react-app の前に |
 | 64. | create-react-appのインストール |
