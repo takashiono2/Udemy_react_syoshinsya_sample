@@ -61,8 +61,8 @@
 | 64. | create-react-appのインストール |
 | 65. | ファイル・フォルダ構成 |
 | 66. | index.js、App.jsのコードを確認する |
-<!-- | 67. | ReactHookを使ってみる |
-| 68. | JSをexportしてみる|
+| 67. | ReactHookを使ってみる |
+<!-- | 68. | JSをexportしてみる|
 | 69. | Atomic Design|
 | 70. | ReactのCSSの記述方法の種類 | -->
 
