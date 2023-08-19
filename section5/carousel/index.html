@@ -37,27 +37,26 @@
       const [active, setActive] = useState(0);
 
       useEffect(()=>{
-        const interval = setInterval(()=>{
-          nextImage()
-          console.log(active)
-        },4000)
-        return ()=>clearInterval(interval)
+        const Interval = setInterval(()=>{
+          nextImage()},4000)
+        return () => clearInterval(Interval)
       },[active])
-
 
       const currentImage = (id) => {
         return setActive(active => active = id);
       }
-      const prevImage = () => {
+      //もしactive <= 0なら、最大数にする
+      const prevImage = (id) => {
         if(active <= 0){
-          setActive(active => active = image.length -1);
+          setActive(active => active = images.length -1);
         }else{
-          setActive(active - 1);
+          setActive(active -1);
         }
       }
+      //もし 写真の番目の数>=最大数なら、０番目とする
       const nextImage = () => {
-        if(active >= images.length-1){
-          setActive(active => active = 0);
+        if(active >= images.length -1){
+          setActive(0);
         }else{
           setActive(active + 1);
         }

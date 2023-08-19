@@ -74,13 +74,13 @@
         setTodo(newList);
       }
 
+      //useEffectを使う。一致しなかったら、newListとする。searchValueで監視
       useEffect(()=>{
-        const newList = todos.filter((todo)=>(
-          todo.item.indexOf(searchValue) !== -1
-        ))
+        const newList = todos.filter((todo)=>{
+          return todo.item.indexOf(searchValue) !== -1
+        })
         setFilteredList(newList);
       },[searchValue])
-      //useEffectを使う。一致しなかったら、newListとする。searchValueで監視
 
       return (
         <>
