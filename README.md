@@ -63,8 +63,14 @@
 | 66. | index.js、App.jsのコードを確認する |
 | 67. | ReactHookを使ってみる |
 | 68. | JSをexportしてみる|
-<!-- | 69. | Atomic Design|
-| 70. | ReactのCSSの記述方法の種類 | -->
-
+| 69. | Atomic Design|
+| 70. | ReactのCSSの記述方法の種類 |
+| 71. | 【スキップ可】Styled Component (CSS in JS) を書いてみる |
+| 72. | 【スキップ可】スタイルを継承させてみる |
+| 73. | 【スキップ可】スタイルをpropsやuseStateを組み合わせてみる |
+| 74. | Emotion (CSS in JS) を書いてみる |
+| 75. | Emotion まとめたり継承したり |
+| 76. | EmotionをStyled-componentsみたいに使う |
+| 77. | このセクションのまとめ |
 </details>
 

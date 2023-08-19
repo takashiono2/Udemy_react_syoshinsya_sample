@@ -2,12 +2,14 @@ import logo from './logo.svg';
 import './App.css';
 import TestComponent from './components/TestComponent';
 import GetItemCompornent from './components/GetItemComponent';
+import EmotionComponent from './components/EmotionComponent';
 
 function App() {
   return (
     <div className="App">
       <TestComponent />
       <GetItemCompornent />
+      <EmotionComponent />
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
