@@ -3,19 +3,18 @@ import styled from '@emotion/styled';
 
 /** @jsxImportSource @emotion/react */
 const EmotionComponent = () => {
-
+//styledの方でh2のcolor:をprops.blue でblueかredにする
   const Hello = styled.h2`
-    color: ${ props => props.blue ? "blue" : "red"};
+    color: ${ props => (props.blue ? "blue" : "red")};
   `
-
-  const largeFont = css`
-    font-size: 54px;
-  `
-  const fontRed = css`
-    color: red;
-    ${largeFont}
-  `
-
+//largeFontのfont-size: 54px;
+const largeFont = css`
+  font-size: 54px;`
+//fontRedのcolor: red;とlargeFontを継承
+const fontRed = css`
+  color: red;
+  ${largeFont}
+`
   return (
     <>
       <h2

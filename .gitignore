@@ -22,10 +22,32 @@ section6/my-app/build
 # misc
 section6/my-app/.DS_Store
 section6/my-app/.env.local
-.section6/my-app/env.development.local
+section6/my-app/env.development.local
 section6/my-app/.env.test.local
 section6/my-app/.env.production.local
 
 section6/my-app/npm-debug.log*
 section6/my-app/yarn-debug.log*
 section6/my-app/yarn-error.log*
+
+section7/router-test/node_modules
+section7/router-test/public
+section7/router-test/*.pnp
+section7/router-test/*.pnp.js
+
+# testing
+section7/router-test/coverage
+
+# production
+section7/router-test/build
+
+# misc
+section7/router-test/.DS_Store
+section7/router-test/.env.local
+section7/router-test/env.development.local
+section7/router-test/.env.test.local
+section7/router-test/.env.production.local
+
+section7/router-test/npm-debug.log*
+section7/router-test/yarn-debug.log*
+section7/router-test/yarn-error.log7
