@@ -5,8 +5,10 @@ import NotFound from './pages/NotFound'
 import { Routes, Route, Navigate } from 'react-router-dom';
 import './App.css'
 import Layout from './Layout';
+import BookDetail from './pages/BookDetail';
+import BookIndex from './pages/BookIndex';
+import BookList from './pages/BookList';
 
-//リンク先、リンク時に色を青に
 function App() {
   const isAuthenticated = false;
   return (
@@ -18,13 +20,17 @@ function App() {
         <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
     </nav> */}
-
+{/* 共通のLayoutを使う */}
       <Routes>
         <Route path="/" element={<Layout />}>
-          <Route path ="/" element={<Home />} />
+          <Route index element={<Home />} />
           <Route path ="/information" element={<Information />} />
           <Route path ="/contact" element={<Contact />} />
           <Route path ="/auth" element={isAuthenticated ? <Navigate to="/contact" /> : <Home /> } />
+          <Route path ="/book-list" element={<BookList />}>
+            <Route index element={<BookIndex />} />
+            <Route path =":id" element={<BookDetail />} />
+          </Route>
           <Route path ="*" element={<NotFound />} />
         </Route>
       </Routes>
