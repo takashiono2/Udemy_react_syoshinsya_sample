@@ -20,14 +20,15 @@ function App() {
         <li><NavLink to="/contact">Contact</NavLink></li>
       </ul>
     </nav> */}
-{/* 共通のLayoutを使う */}
+{/* 共通のLayoutを使う, "/book-list"に対してBookListコンポーネントを使う。以下はネスト*/}
+{/* BookIndex、BookDetailコンポーネントはネストしBookDetailの方はidを使用する */}
       <Routes>
-        <Route path="/" element={<Layout />}>
+        <Route element={<Layout />} >
           <Route index element={<Home />} />
           <Route path ="/information" element={<Information />} />
           <Route path ="/contact" element={<Contact />} />
           <Route path ="/auth" element={isAuthenticated ? <Navigate to="/contact" /> : <Home /> } />
-          <Route path ="/book-list" element={<BookList />}>
+          <Route path="/book-list" element={<BookList />} >
             <Route index element={<BookIndex />} />
             <Route path =":id" element={<BookDetail />} />
           </Route>

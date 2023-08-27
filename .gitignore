@@ -51,3 +51,6 @@ section7/router-test/.env.production.local
 section7/router-test/npm-debug.log*
 section7/router-test/yarn-debug.log*
 section7/router-test/yarn-error.log7
+
+section8/book-app/public/*.ico
+section8/book-app/public/*.png

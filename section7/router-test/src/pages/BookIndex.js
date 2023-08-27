@@ -2,8 +2,9 @@ import { getBooks } from '../functions/book';
 import { Link } from 'react-router-dom';
 
 const BookIndex = () => {
-  const books = getBooks()
-
+  // オブジェクトを取得
+  const books = getBooks();
+  // book-list/idとしたい
   return (
     <div>
       <ul>
